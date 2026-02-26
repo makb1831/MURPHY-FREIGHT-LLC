@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E85D04;stop-opacity:0.8" />
+      <stop offset="40%" style="stop-color:#F48C06;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#DC2F02;stop-opacity:0.4" />
+    </linearGradient>
+    <linearGradient id="road" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2A2D34;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A1D23;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="truck-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC143C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky/Sunset Background -->
+  <rect width="800" height="520" fill="url(#sky)"/>
+  
+  <!-- Sun -->
+  <circle cx="650" cy="180" r="60" fill="#FDB813" opacity="0.9"/>
+  <circle cx="650" cy="180" r="90" fill="#FDB813" opacity="0.3"/>
+  
+  <!-- Distant Mountains -->
+  <path d="M 0 350 L 200 280 L 400 320 L 600 270 L 800 340 L 800 520 L 0 520 Z" fill="#3A3D44" opacity="0.6"/>
+  <path d="M 100 380 L 350 300 L 550 350 L 800 310 L 800 520 L 0 520 Z" fill="#2C2F36" opacity="0.7"/>
+  
+  <!-- Road -->
+  <path d="M 0 420 L 800 420 L 800 520 L 0 520 Z" fill="url(#road)"/>
+  
+  <!-- Road lines (dashed) -->
+  <rect x="390" y="440" width="20" height="6" fill="#F4A261" opacity="0.8"/>
+  <rect x="390" y="460" width="20" height="6" fill="#F4A261" opacity="0.8"/>
+  <rect x="390" y="480" width="20" height="6" fill="#F4A261" opacity="0.8"/>
+  <rect x="390" y="500" width="20" height="6" fill="#F4A261" opacity="0.8"/>
+  
+  <!-- Truck Container/Trailer -->
+  <rect x="420" y="330" width="280" height="90" rx="4" fill="url(#truck-gradient)"/>
+  <rect x="420" y="330" width="280" height="10" fill="#6B0000" opacity="0.3"/>
+  <rect x="685" y="340" width="10" height="70" fill="#4A0000"/>
+  
+  <!-- Truck Cab -->
+  <path d="M 690 340 L 750 340 L 760 360 L 760 420 L 690 420 Z" fill="url(#truck-gradient)"/>
+  <path d="M 710 345 L 745 345 L 753 360 L 753 370 L 710 370 Z" fill="#1A1D23" opacity="0.6"/>
+  
+  <!-- Windshield reflection -->
+  <path d="M 715 350 L 740 350 L 748 362 L 720 362 Z" fill="#F4A261" opacity="0.2"/>
+  
+  <!-- Truck wheels -->
+  <circle cx="470" cy="420" r="22" fill="#1A1D23"/>
+  <circle cx="470" cy="420" r="16" fill="#3A3D44"/>
+  <circle cx="470" cy="420" r="8" fill="#6B6E76"/>
+  
+  <circle cx="650" cy="420" r="22" fill="#1A1D23"/>
+  <circle cx="650" cy="420" r="16" fill="#3A3D44"/>
+  <circle cx="650" cy="420" r="8" fill="#6B6E76"/>
+  
+  <circle cx="715" cy="420" r="22" fill="#1A1D23"/>
+  <circle cx="715" cy="420" r="16" fill="#3A3D44"/>
+  <circle cx="715" cy="420" r="8" fill="#6B6E76"/>
+  
+  <!-- Headlights (subtle glow) -->
+  <ellipse cx="755" cy="390" rx="6" ry="8" fill="#FDB813" opacity="0.8"/>
+  <ellipse cx="755" cy="405" rx="6" ry="8" fill="#DC2F02" opacity="0.6"/>
+  
+  <!-- Container details -->
+  <line x1="510" y1="335" x2="510" y2="415" stroke="#4A0000" stroke-width="2" opacity="0.5"/>
+  <line x1="600" y1="335" x2="600" y2="415" stroke="#4A0000" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Shadow beneath truck -->
+  <ellipse cx="580" cy="425" rx="200" ry="12" fill="#000000" opacity="0.3"/>
+</svg>
