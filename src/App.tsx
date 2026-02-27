@@ -128,102 +128,104 @@ const Footer = ({ user }: { user: User | null }) => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-              <Logo size="sm" showText={true} />
-              <p className="text-[#C9B8A6] text-sm mt-4">
-                Next-generation freight management solutions for modern logistics.
-              </p>
-              <div className="flex items-center gap-2 text-[#C9B8A6] mt-2">
-                <MapPin className="w-4 h-4" />
-                <span className="text-sm">954 LITTLE BAY AVE, NORFOLK, VA, 23503-1328</span>
-          return (
-            <footer className="bg-[#0C1519] border-t border-[#3A3534] text-white py-16">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                  <div>
-                    <div className="mb-6">
-                      <Logo size="md" />
-                    </div>
-                    <p className="text-[#C9B8A6] mb-6">
-                      Your trusted partner in nationwide freight logistics. Connecting shippers with reliable carriers across all 48 states.
-                    </p>
-                    <div className="flex items-center gap-2 text-[#C9B8A6]">
-                      <MapPin className="w-4 h-4" />
-                      <span className="text-sm">954 LITTLE BAY AVE, NORFOLK, VA, 23503-1328</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-6">Quick Links</h4>
-                    <ul className="space-y-3">
-                      {[{ name: 'Home', action: () => onNavigate('home') },
-                        { name: 'Load Board', action: () => onNavigate('loadboard') },
-                        { name: 'Services', action: () => onNavigate('services') },
-                        { name: 'Live Tracking', action: () => onNavigate('tracking') },
-                        { name: 'Carrier Portal', action: () => onNavigate('carrier') },
-                      ].map((link) => (
-                        <li key={link.name}>
-                          <button onClick={link.action} className="text-[#C9B8A6] hover:text-[#CF9D7B] transition-colors text-sm">
-                            {link.name}
-                          </button>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-6">Our Services</h4>
-                    <ul className="space-y-3">
-                      {['Full Truckload (FTL)', 'Less Than Truckload (LTL)', 'Expedited Shipping', 'Refrigerated Freight', 'Flatbed/Oversized', 'Cross-Border'].map((service) => (
-                        <li key={service}>
-                          <button onClick={() => onNavigate('services')} className="text-[#C9B8A6] hover:text-[#CF9D7B] transition-colors text-sm">
-                            {service}
-                          </button>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-6">Contact Us</h4>
-                    <ul className="space-y-4">
-                      <li className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-[#162127] rounded-lg flex items-center justify-center">
-                          <Phone className="w-5 h-5 text-[#CF9D7B]" />
-                        </div>
-                        <div>
-                          <p className="text-xs text-[#C9B8A6]">Call Us</p>
-                          <p className="text-sm text-[#E9E0D7]">(757) 777-1714</p>
-                        </div>
-                      </li>
-                      <li className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-[#162127] rounded-lg flex items-center justify-center">
-                          <Mail className="w-5 h-5 text-[#CF9D7B]" />
-                        </div>
-                        <div>
-                          <p className="text-xs text-[#C9B8A6]">Email Us</p>
-                          <p className="text-sm text-[#E9E0D7]">contact@murphyfreightllc.com</p>
-                        </div>
-                      </li>
-                      <li className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-[#162127] rounded-lg flex items-center justify-center">
-                          <MapPin className="w-5 h-5 text-[#CF9D7B]" />
-                        </div>
-                        <div>
-                          <p className="text-xs text-[#C9B8A6]">Address</p>
-                          <p className="text-sm text-[#E9E0D7]">954 LITTLE BAY AVE, NORFOLK, VA, 23503-1328</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+            <Logo size="sm" showText={true} />
+            <p className="text-[#C9B8A6] text-sm mt-4">
+              Next-generation freight management solutions for modern logistics.
+            </p>
+            <div className="flex items-center gap-2 text-[#C9B8A6] mt-2">
+              <MapPin className="w-4 h-4" />
+              <span className="text-sm">954 LITTLE BAY AVE, NORFOLK, VA, 23503-1328</span>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold mb-6">Quick Links</h4>
+            <ul className="space-y-3">
+              {footerLinks.map((link) => (
+                <li key={link.name}>
+                  <button onClick={link.action} className="text-[#C9B8A6] hover:text-[#CF9D7B] transition-colors text-sm">
+                    {link.name}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          {/* Services */}
+          <div>
+            <h4 className="font-semibold mb-6">Our Services</h4>
+            <ul className="space-y-3">
+              {['Full Truckload (FTL)', 'Less Than Truckload (LTL)', 'Expedited Shipping', 'Refrigerated Freight', 'Flatbed/Oversized', 'Cross-Border'].map((service) => (
+                <li key={service}>
+                  <button onClick={() => navigateTo('services')} className="text-[#C9B8A6] hover:text-[#CF9D7B] transition-colors text-sm">
+                    {service}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          {/* Contact */}
+          <div>
+            <h4 className="font-semibold mb-6">Contact Us</h4>
+            <ul className="space-y-4">
+              <li className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-[#162127] rounded-lg flex items-center justify-center">
+                  <Phone className="w-5 h-5 text-[#CF9D7B]" />
                 </div>
-                <div className="pt-8 border-t border-[#3A3534] flex flex-col md:flex-row justify-between items-center gap-4">
-                  <p className="text-[#C9B8A6] text-sm">
-                    © 2026 MURPHY FREIGHT LLC. All rights reserved.
-                  </p>
-                  <div className="flex items-center gap-6">
-                    <span className="text-[#C9B8A6] text-sm">MC-123456</span>
-                    <span className="text-[#C9B8A6] text-sm">DOT-7890123</span>
-                  </div>
+                <div>
+                  <p className="text-xs text-[#C9B8A6]">Call Us</p>
+                  <p className="text-sm text-[#E9E0D7]">(757) 777-1714</p>
                 </div>
-              </div>
-            </footer>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-[#162127] rounded-lg flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-[#CF9D7B]" />
+                </div>
+                <div>
+                  <p className="text-xs text-[#C9B8A6]">Email Us</p>
+                  <p className="text-sm text-[#E9E0D7]">contact@murphyfreightllc.com</p>
+                </div>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-[#162127] rounded-lg flex items-center justify-center">
+                  <MapPin className="w-5 h-5 text-[#CF9D7B]" />
+                </div>
+                <div>
+                  <p className="text-xs text-[#C9B8A6]">Address</p>
+                  <p className="text-sm text-[#E9E0D7]">954 LITTLE BAY AVE, NORFOLK, VA, 23503-1328</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        {/* Bottom */}
+        <div className="pt-8 border-t border-[#3A3534] flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-[#C9B8A6] text-sm">
+            © 2026 MURPHY FREIGHT LLC. All rights reserved.
+          </p>
+          <div className="flex items-center gap-6">
+            <span className="text-[#C9B8A6] text-sm">MC-123456</span>
+            <span className="text-[#C9B8A6] text-sm">DOT-7890123</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+// Login Modal
+const LoginModal = ({ open, onClose, onLogin }: { open: boolean; onClose: () => void; onLogin: (email: string, password: string) => void }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onLogin(email, password);
+  };
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
