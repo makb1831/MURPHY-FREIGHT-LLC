@@ -2002,6 +2002,8 @@ const HomePage = ({ onNavigate, onLogin, isScrolled, mobileMenuOpen, setMobileMe
 
       {/* Footer */}
       <footer className="bg-[#0C1519] border-t border-[#3A3534] text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             <div>
               <div className="mb-6">
                 <Logo size="md" />
