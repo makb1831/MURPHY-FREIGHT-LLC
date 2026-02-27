@@ -128,10 +128,14 @@ const Footer = ({ user }: { user: User | null }) => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <Logo size="sm" showText={true} />
-            <p className="text-[#C9B8A6] text-sm mt-4">
-              Next-generation freight management solutions for modern logistics.
-            </p>
+              <Logo size="sm" showText={true} />
+              <p className="text-[#C9B8A6] text-sm mt-4">
+                Next-generation freight management solutions for modern logistics.
+              </p>
+              <div className="flex items-center gap-2 text-[#C9B8A6] mt-2">
+                <MapPin className="w-4 h-4" />
+                <span className="text-sm">954 LITTLE BAY AVE, NORFOLK, VA, 23503-1328</span>
+              </div>
           </div>
 
           {/* Quick Links */}
@@ -172,7 +176,7 @@ const Footer = ({ user }: { user: User | null }) => {
                 </div>
                 <div>
                   <p className="text-xs text-[#C9B8A6]">Call Us</p>
-                  <p className="text-sm text-[#E9E0D7]">+1 (661) 596-3328</p>
+                  <p className="text-sm text-[#E9E0D7]">(757) 777-1714</p>
                 </div>
               </li>
               <li className="flex items-center gap-3">
@@ -181,16 +185,16 @@ const Footer = ({ user }: { user: User | null }) => {
                 </div>
                 <div>
                   <p className="text-xs text-[#C9B8A6]">Email Us</p>
-                  <p className="text-sm text-[#E9E0D7]">thirdeyefreight@gmail.com</p>
+                  <p className="text-sm text-[#E9E0D7]">contact@murphyfreightllc.com</p>
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-[#162127] rounded-lg flex items-center justify-center">
-                  <Clock className="w-5 h-5 text-[#CF9D7B]" />
+                  <MapPin className="w-5 h-5 text-[#CF9D7B]" />
                 </div>
                 <div>
-                  <p className="text-xs text-[#C9B8A6]">Support Hours</p>
-                  <p className="text-sm text-[#E9E0D7]">24/7 Dispatch Support</p>
+                  <p className="text-xs text-[#C9B8A6]">Address</p>
+                  <p className="text-sm text-[#E9E0D7]">954 LITTLE BAY AVE, NORFOLK, VA, 23503-1328</p>
                 </div>
               </li>
             </ul>
@@ -200,7 +204,7 @@ const Footer = ({ user }: { user: User | null }) => {
         {/* Bottom */}
         <div className="pt-8 border-t border-[#3A3534] flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[#C9B8A6] text-sm">
-            © 2026 Third Eye Freight Inc. All rights reserved.
+            © 2026 MURPHY FREIGHT LLC. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <span className="text-[#C9B8A6] text-sm">MC-123456</span>
@@ -1998,8 +2002,6 @@ const HomePage = ({ onNavigate, onLogin, isScrolled, mobileMenuOpen, setMobileMe
 
       {/* Footer */}
       <footer className="bg-[#0C1519] border-t border-[#3A3534] text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             <div>
               <div className="mb-6">
                 <Logo size="md" />
@@ -2009,7 +2011,7 @@ const HomePage = ({ onNavigate, onLogin, isScrolled, mobileMenuOpen, setMobileMe
               </p>
               <div className="flex items-center gap-2 text-[#C9B8A6]">
                 <MapPin className="w-4 h-4" />
-                <span className="text-sm">Bakersfield, CA, 93311</span>
+                <span className="text-sm">954 LITTLE BAY AVE, NORFOLK, VA, 23503-1328</span>
               </div>
             </div>
             
@@ -2054,7 +2056,7 @@ const HomePage = ({ onNavigate, onLogin, isScrolled, mobileMenuOpen, setMobileMe
                   </div>
                   <div>
                     <p className="text-xs text-[#C9B8A6]">Call Us</p>
-                    <p className="text-sm text-[#E9E0D7]">+1 (661) 596-3328</p>
+                    <p className="text-sm text-[#E9E0D7]">(757) 777-1714</p>
                   </div>
                 </li>
                 <li className="flex items-center gap-3">
@@ -2063,16 +2065,16 @@ const HomePage = ({ onNavigate, onLogin, isScrolled, mobileMenuOpen, setMobileMe
                   </div>
                   <div>
                     <p className="text-xs text-[#C9B8A6]">Email Us</p>
-                    <p className="text-sm text-[#E9E0D7]">thirdeyefreight@gmail.com</p>
+                    <p className="text-sm text-[#E9E0D7]">contact@murphyfreightllc.com</p>
                   </div>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-[#162127] rounded-lg flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-[#CF9D7B]" />
+                    <MapPin className="w-5 h-5 text-[#CF9D7B]" />
                   </div>
                   <div>
-                    <p className="text-xs text-[#C9B8A6]">Support Hours</p>
-                    <p className="text-sm text-[#E9E0D7]">24/7 Dispatch Support</p>
+                    <p className="text-xs text-[#C9B8A6]">Address</p>
+                    <p className="text-sm text-[#E9E0D7]">954 LITTLE BAY AVE, NORFOLK, VA, 23503-1328</p>
                   </div>
                 </li>
               </ul>
@@ -2081,7 +2083,7 @@ const HomePage = ({ onNavigate, onLogin, isScrolled, mobileMenuOpen, setMobileMe
           
           <div className="pt-8 border-t border-[#3A3534] flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[#C9B8A6] text-sm">
-              © 2026 Third Eye Freight Inc. All rights reserved.
+              © 2026 MURPHY FREIGHT LLC. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <span className="text-[#C9B8A6] text-sm">MC-123456</span>
